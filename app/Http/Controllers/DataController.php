@@ -102,6 +102,8 @@ class DataController extends Controller
         $inputData = preg_split('/\r\n|\r|\n/', $request->input('data')); // Split the string by newline characters
         $splitPercentage = $request->input('split_percentage');
 
+        // Test12e
+
         // Clean and format the data
         $formattedData = collect($inputData)->map(function ($item, $key) {
             return [
